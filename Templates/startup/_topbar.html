@@ -1,0 +1,6 @@
+
+<div class="topnav">
+    <a href="{% url 'home' %}"{% if request.path == "/" %} class="active"{% endif %}>Home</a>
+    <a href="{% url 'physics' %}"{% if request.path == "/physics" %} class="active"{% endif %}>Physics</a>
+    <a href="{% url 'chemistry' %}"{% if request.path == "/chemistry" %} class="active"{% endif %}>Chemistry</a>
+</div>

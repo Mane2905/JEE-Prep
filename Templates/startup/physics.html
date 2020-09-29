@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<section>
+    
+    <ul class='homep'>
+        <h3>PHYSICS</h3>
+        {% for post in phy %}    
+          <a href="{{post.pdf.url}}" target="_blank"><li>{{post.chapter}} Worksheet {{post.N}}</li></a>
+        {% endfor %}
+        
+    </ul>
+</section>
+{% endblock %}

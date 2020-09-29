@@ -1,0 +1,21 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/topbar.css' %}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+      <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- lightbox-->
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+    <title>BT Real State {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <!--TOP BAR-->
+    {% include 'startup/_topbar.html' %}
+    {% block content %}{% endblock %}
+    
+</body>
+</html>
